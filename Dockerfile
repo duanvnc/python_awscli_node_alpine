@@ -7,6 +7,7 @@ RUN apk -uv add --no-cache groff jq less && \
 
 RUN apk add --update nodejs nodejs-npm && \
     node -v
+RUN apk add --update yarn
 WORKDIR /aws
 
 CMD sh
