@@ -8,6 +8,8 @@ RUN apk -uv add --no-cache groff jq less && \
 RUN apk add --update nodejs nodejs-npm && \
     node -v
 RUN apk add --update yarn
+RUN npm install serverless -g --silent
+
 WORKDIR /aws
 
 CMD sh
